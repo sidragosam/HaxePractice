@@ -2,9 +2,8 @@
 (function ($global) { "use strict";
 var Main = function() { };
 Main.main = function() {
-	console.log("src/Main.hx:3:","Hello, world!");
-	console.log("src/Main.hx:4:","Goodbye, world!");
-	console.log("src/Main.hx:7:","Hello Javascript!");
+	console.log("src/Main.hx:14:","Apples:" + 10);
+	console.log("src/Main.hx:17:","Apples after eating two:" + 8);
 };
 var haxe_iterators_ArrayIterator = function(array) {
 	this.current = 0;
