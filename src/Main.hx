@@ -1,5 +1,5 @@
 class Main {
-	static function main() {
+	static function main():Void {
 		/*trace("Hello, world!");
 		trace("Goodbye, world!");
 
@@ -10,6 +10,7 @@ class Main {
 		#if python
 			trace("Hello Python!");
 		#end*/
+		
 		var appleCount:Int = 10;
 		trace("Apples: " + appleCount);
 
@@ -17,6 +18,10 @@ class Main {
 		trace("Apples after eating two: " + appleCount);
 
 		var question = "What's your name?";
+		#if !python
+			trace(question);
+		#end
+		#if python
 		Sys.println(question);
 
 		var consoleInput = Sys.stdin();
@@ -38,6 +43,7 @@ class Main {
 		consoleInput = Sys.stdin();
 		var hobby = consoleInput.readLine();
 		Sys.println('$hobby is a nice hobby!');
+		#end
 	}
 
 	static function checkAge(age){

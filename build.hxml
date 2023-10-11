@@ -7,3 +7,6 @@
 --python bin/main.py
 --next
 --js bin/main.js
+--next
+--java bin
+--main Main
